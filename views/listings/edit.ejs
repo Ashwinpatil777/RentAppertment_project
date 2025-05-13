@@ -1,0 +1,73 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-3">
+  <div class="col-8 offset-2">
+    <h3>Edit your listing</h3>
+    <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input name="listing[title]" value="<%= listing.title %>" type="text" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="listing[description]" class="form-control" required><%= listing.description %></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">Upload New Image</label>
+        <input name="listing[image]" type="file" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input name="listing[price]" value="<%= listing.price %>" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input name="listing[location]" value="<%= listing.location %>" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="contactNumber" class="form-label">Contact Number</label>
+        <input name="listing[contactNumber]" value="<%= listing.contactNumber %>" type="tel" 
+            class="form-control" required pattern="[0-9]{10}" 
+            title="Please enter a valid 10-digit phone number"
+            placeholder="Enter 10-digit phone number" />
+        <small class="text-muted">This number will be visible only to logged-in users</small>
+      </div>
+      <button class="btn btn-dark edit-btn mt-3">Edit</button>
+    </form>
+  </div>
+</div>
+
+<style>
+.form-label {
+    font-weight: 500;
+    color: #2d2d2d;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+}
+
+.form-control:focus {
+    border-color: #ff3333;
+    box-shadow: 0 0 0 0.2rem rgba(255,51,51,0.15);
+}
+
+.btn-dark {
+    background: linear-gradient(135deg, #ff3333 0%, #ff4d4d 100%);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    background: linear-gradient(135deg, #ff4d4d 0%, #ff6666 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255,51,51,0.2);
+}
+
+.text-muted {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+</style>

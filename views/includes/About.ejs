@@ -1,0 +1,315 @@
+<%- layout('layouts/boilerplate') %>
+
+<div class="about-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="about-card">
+                    <!-- Hero Section -->
+                    <div class="text-center mb-5">
+                        <h1 class="about-title">About RentEase</h1>
+                        <p class="about-subtitle">Your Trusted Partner in Finding the Perfect Home</p>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="about-content">
+                                <h3 class="section-title">Our Story</h3>
+                                <p>Founded with a vision to revolutionize the rental experience, RentEase has grown to become a leading platform connecting property owners with potential tenants. We believe everyone deserves a place they can call home.</p>
+                                
+                                <div class="stats-container">
+                                    <div class="stat-item">
+                                        <h4>1000+</h4>
+                                        <p>Happy Tenants</p>
+                                    </div>
+                                    <div class="stat-item">
+                                        <h4>500+</h4>
+                                        <p>Listed Properties</p>
+                                    </div>
+                                    <div class="stat-item">
+                                        <h4>50+</h4>
+                                        <p>Cities Covered</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="about-image">
+                                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3" 
+                                     alt="Modern Apartment Building" 
+                                     class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features Section -->
+                    <div class="features-section mt-5">
+                        <h3 class="section-title text-center mb-4">Why Choose Us</h3>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                    <h4>Quality Listings</h4>
+                                    <p>Carefully verified properties that meet our high standards</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h4>Secure Platform</h4>
+                                    <p>Safe and secure transactions with verified users</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-headset"></i>
+                                    </div>
+                                    <h4>24/7 Support</h4>
+                                    <p>Round-the-clock assistance for all your needs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Section -->
+                    <div class="team-section mt-5">
+                        <h3 class="section-title text-center mb-4">Our Team</h3>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="team-card">
+                                    <div class="team-image">
+                                        <img src="/images/member.jpeg" alt="Team Member">
+                                    </div>
+                                    <h4>Ashwin patil</h4>
+                                    <p>Developer</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="team-card">
+                                    <div class="team-image">
+                                        <img src="/images/member2.jpeg" alt="Team Member">
+                                    </div>
+                                    <h4>Aynushree</h4>
+                                    <p>Developer</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="team-card">
+                                    <div class="team-image">
+                                        <img src="/images/member3.jpeg" alt="Team Member">
+                                    </div>
+                                    <h4>Deeprak</h4>
+                                    <p>Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.about-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.about-card {
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.about-title {
+    color: #2d2d2d;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.about-subtitle {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.section-title {
+    color: #2d2d2d;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.about-content p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    border-radius: 10px;
+    color: white;
+}
+
+.stat-item h4 {
+    color: #ff3333;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.stat-item p {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 0;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ff3333 0%, #ff4d4d 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.feature-card h4 {
+    color: #2d2d2d;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.feature-card p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+.team-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.team-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ff3333;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card h4 {
+    color: #2d2d2d;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.team-card p {
+    color: #ff3333;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .about-card {
+        padding: 2rem;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .stat-item {
+        width: 100%;
+    }
+
+    .about-image {
+        margin-top: 2rem;
+    }
+
+    .team-card {
+        margin-bottom: 1.5rem;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate stats on scroll
+    const stats = document.querySelectorAll('.stat-item');
+    const features = document.querySelectorAll('.feature-card');
+    const team = document.querySelectorAll('.team-card');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = entry.target.classList.contains('stat-item') 
+                    ? 'translateY(0)' 
+                    : 'translateY(-5px)';
+            }
+        });
+    });
+
+    [...stats, ...features, ...team].forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        item.style.transition = 'all 0.5s ease';
+        observer.observe(item);
+    });
+});
+</script>
