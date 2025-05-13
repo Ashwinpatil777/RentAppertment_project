@@ -1,6 +1,7 @@
 # RentAppertment_project
 
 🏠 RentApartment Project
+
 A Full-Stack Rental Apartment Listing Platform built with the MERN stack (MongoDB, Express.js, React, Node.js) using EJS as the templating engine.
 
 🔑 Key Features
@@ -35,18 +36,6 @@ Database	MongoDB + Mongoose
 Auth	Passport.js
 File Upload	Multer
 
-📁 Project Structure
-csharp
-Copy code
-RentApartment/
-├── models/          # Mongoose schemas (User, Apartment)
-├── routes/          # Route definitions
-├── views/           # EJS templates
-├── public/          # Static files (CSS, images)
-├── middleware/      # Custom middleware (auth, error)
-├── uploads/         # Uploaded images
-├── app.js           # Entry point
-└── package.json     # Dependencies
 
 🧩 Key Dependencies
 express – Backend framework
